@@ -1,0 +1,299 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+
+  body {
+      background: #DCFFF7;
+      /*background-image: linear-gradient(#DCFFF7, #86FF83);*/
+  }
+
+  .footerz {
+    margin-bottom: 30px;
+  }
+
+  #heywow {
+    text-decoration: none !important;
+    outline: none;
+    font-size: 1.5em;
+    background: -webkit-linear-gradient(#4A90E2, #E770FF);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+
+
+  h1 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 60px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 4px 4px black;
+  }
+
+  h4, h5 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  #container {
+      display: grid;
+      grid-template-columns: repeat(10, 1fr);
+      grid-gap: 10px;
+      padding-top: 50px;
+      padding-bottom: 100px;
+      padding-left: 125px;
+      padding-right: 125px;
+      
+
+  }
+
+  #container > div {
+      cursor: pointer;
+      height: 100px;
+      width: 100px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      transition: all 0.2s ease-in;
+
+  }
+
+  #container > div:hover {
+
+      transform: scale(1.07);
+  }
+
+/* remove that fucking blue border */
+input {
+    outline: none !important;
+}
+
+
+  .button {
+      background-color: transparent;
+      height: 100px;
+      width: 100px;
+      border-radius: 8px;
+      border: none;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      
+  }
+
+/*768 up to 1024 100*/
+@media (max-width: 1220px) {
+    #container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        padding-top: 50px;
+        padding-left: 5%;
+        padding-right: 5%;
+
+        
+  
+    }
+
+    input {
+      width: 1fr;
+      height: 1fr;
+    }
+  
+    .button {
+      width: 1fr;
+      height: 1fr;
+    }
+  
+    #container > div {
+        cursor: pointer;
+        height: 1fr;
+        width: 1fr;
+        background-color: transparent;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-self: center;
+        transition: all 0.2s ease-in;
+
+  
+    }
+
+  h1 {
+      margin-top: 10px;
+      text-align: center;
+      font-size: 60px;
+      font-weight: bold;
+      color: white;
+      text-shadow: 4px 4px black;
+  }
+
+  h4 {
+    text-align: center;
+    font-weight: bold;
+  }
+
+    /*header {
+      display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        justify-self: center;
+
+    }*/
+}
+
+
+
+/*375 up to 768 75 all and */
+@media (max-width: 768) {
+  #container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      /*grid-gap: 20px;*/
+      padding-top: 50px;
+      padding-left: 5%;
+      padding-right: 5%;
+
+  }
+
+  input {
+    width: 1fr;
+    height: 1fr;
+  }
+
+  .button {
+    width: 1fr;
+    height: 1fr;
+  }
+
+  #container > div {
+      cursor: pointer;
+      height: 1fr;
+      width: 1fr;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      justify-self: center;
+      transition: all 0.2s ease-in;
+  }
+
+  h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px black;
+}
+
+h4 {
+  text-align: center;
+  font-weight: bold;
+}
+}
+
+/*375 and under 66all and */
+@media (max-width: 475px) {
+  #container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      padding-top: 50px;
+      /*padding-left: 20px;*/
+      /*padding-right: 20px;*/
+      /*padding-left: 5%;
+      padding-right: 5%;*/
+
+  }
+
+  input {
+    width: 60px;
+    height: 60px;
+  }
+
+  .button {
+    width: 60px;
+    height: 60px;
+  }
+
+  #container > div {
+      cursor: pointer;
+      height: 60px;
+      width: 60px;
+      background-color: transparent;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+      justify-self: center;
+
+      transition: all 0.2s ease-in;
+
+
+  }
+
+h1 {
+    margin-top: 10px;
+    text-align: center;
+    font-size: 60px;
+    font-weight: bold;
+    color: white;
+    text-shadow: 4px 4px black;
+    width: 100%;
+}
+
+h4 {
+  text-align: center;
+  width: 100%;
+  font-weight: bold;
+}
+}
+
+
+/* Tooltip */
+
+#tooltip {
+
+    display: inline-block;
+    border-bottom: none;
+  }
+
+  #tooltip #tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #eee;
+    border-color: black;
+    color: black;
+    text-align: left;
+    font-size: 16px;
+    border-radius: 6px;
+    padding-left: 10px;
+    padding-top: 5px;
+    padding-bottom: 3px;
+    padding-right: 2px;
+    top: 100%;
+    left: 50%;
+    margin-left: -60px;
+  
+    /* Position the tooltip */
+    position: absolute;
+    
+  }
+  
+  #tooltip:hover #tooltiptext {
+    visibility: visible;
+  }
